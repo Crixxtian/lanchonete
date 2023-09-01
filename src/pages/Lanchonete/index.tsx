@@ -63,7 +63,6 @@ const estilos = StyleSheet.create({
     display:"flex",
     justifyContent:"flex-start",
     alignItems:"center",
-    paddingVertical: 12,
   },
   preimeiroL:{
     fontSize: 18,
@@ -72,8 +71,11 @@ const estilos = StyleSheet.create({
   },
   preco:{
     fontSize: 20,
-    lineHeight:42,
+    lineHeight: 20,
     color: "#2a9f85",
-    marginTop: 8
+    display: "flex",
+    alignItems:"center",
+    textAlign:"right",
+  
   }
 });
