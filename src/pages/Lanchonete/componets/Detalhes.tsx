@@ -2,17 +2,24 @@ import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 import cachorro from "../../../../assets/lanconetelogos/cachorro.png";
 
-export default function Detalhes(){
-    return<><Text style={estilos.titulodadescricao}>Sobre:</Text>
+type Props={
+  
+  titulodadescricao: string,
+  descricao: string,
+  primeiroL: string,
+  preco:string
+}
+
+export default function Detalhes({titulodadescricao, descricao, primeiroL, preco}: Props){
+    return<><Text style={estilos.titulodadescricao}>{titulodadescricao}</Text>
     <Text style={estilos.descricao}>
-      O Menu mais completo de sua região, com as mais completas e saborosas
-      opções, Cheio de opções feitas de forma artesanal
+      {descricao}
     </Text>
     <View style={estilos.lanches}>
       <Image style={estilos.imgCachorro} source={cachorro}></Image>
-      <Text style={estilos.preimeiroL}>cachorro-picante</Text>
+      <Text style={estilos.preimeiroL}>{primeiroL}</Text>
     </View>
-    <Text style={estilos.preco}>R$ 25,00</Text></>
+    <Text style={estilos.preco}>{preco}</Text></>
 }
 const estilos = StyleSheet.create({
     

@@ -3,10 +3,15 @@ import { Dimensions, StyleSheet, Text, View, Image } from "react-native";
 import topo from "../../../../assets/lanconetelogos/topo.png";
 const width = Dimensions.get("screen").width;
 
-export default function Topo(){
+type Props={
+  titulo: string
+}
+
+
+export default function Topo({titulo}: Props){
     return <>
     <Image source={topo} style={estilos.topo}></Image>
-      <Text style={estilos.titulo}>MENU</Text>
+      <Text style={estilos.titulo}>{titulo}</Text>
     
     </>
 }
