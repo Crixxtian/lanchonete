@@ -12,6 +12,9 @@ export default function Lanchonete() {
       <Topo titulo={lanchonete.topo.titulo}/>
       <View style={estilos.lanchonete}>
         <Detalhes titulodadescricao={lanchonete.detalhe.titulodadescricao}
+                  descricao={lanchonete.detalhe.descricao}
+                  primeiroL={lanchonete.detalhe.primeiroL}
+                  preco={lanchonete.detalhe.preco}
                   />
       </View>
     </>
